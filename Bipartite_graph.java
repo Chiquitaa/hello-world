@@ -31,7 +31,7 @@ void add(int val) {
 int remove() {
 	start++;
 	int temp=start-1;
-	if(start>end) {
+	if(start>=end) {
 		start=-1;
 		end=-1;
 		}
