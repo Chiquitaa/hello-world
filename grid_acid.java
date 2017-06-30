@@ -85,4 +85,16 @@ public class Solution{ 
   void filled(int grid[][]) { 
     int check=0;
     for(int i=0;i<grid.length; i++) { 
-      for(int j=0; j<grid[0].length;j++) {  if(grid[i][j]==2) {  if(checkempty(grid,i,j)) grid[i][j]=-1;  } if(grid[i][j]!=0 || grid[i][j]!=-1) { count2=-1; check=1; break; } } if(check!=0) break;}}}
+      for(int j=0; j<grid[0].length;j++) {  
+        if(grid[i][j]==2) {  
+          if(checkempty(grid,i,j)) grid[i][j]=-1;  
+        } 
+        if(grid[i][j]!=0 || grid[i][j]!=-1) { 
+          count2=-1; 
+          check=1; 
+          break; 
+        } } 
+      if(check!=0) break;
+    }
+  }
+}
